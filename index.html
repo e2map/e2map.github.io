@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models</title>
+  <meta name="description" content="Project page for E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models"/>
+  <meta property="og:description" content="Project page for E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models"/>
+  <meta property="og:url" content="https://e2map.github.io/"/>
+  <meta property="og:image" content="static/images/concept.png" />
+  <meta property="og:image:width" content="3497"/>
+  <meta property="og:image:height" content="1929"/>
+
+  <meta name="twitter:title" content="E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models">
+  <meta name="twitter:description" content="TWITTERProject page for E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models">
+  <meta name="twitter:image" content="static/images/concept.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="Robot Navigation, Language Models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/limbo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">E2Map: Experience-and-Emotion Map<br>for Self-Reflective Robot Navigation with Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://sites.google.com/snu.ac.kr/chankim" target="https://sites.google.com/snu.ac.kr/chankim">Chan Kim</a><sup>*1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.notion.so/Keonwoo-Kim-743fdb8532e34542bca4172790183849?pvs=4" target="https://www.notion.so/Keonwoo-Kim-743fdb8532e34542bca4172790183849?pvs=4">Keonwoo Kim</a><sup>*1</sup>,</span>
+                  <span class="author-block">
+                    <a">Mintaek Oh</a><sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a">Hanbi Baek</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a">Jiyang Lee</a><sup>1</sup>,</span>
+                        <span class="author-block">
+                          <a href="https://donghwijung.github.io/" target="https://donghwijung.github.io/">Donghwi Jung</a><sup>1</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://woo-soojin.github.io/" target="https://woo-soojin.github.io/">Soojin Woo</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                              <a">Younkyung Woo</a><sup>2</sup>,</span>
+                              <span class="author-block">
+                                <a href="https://msl.stanford.edu/people/johntucker" target="https://msl.stanford.edu/people/johntucker">John Tucker</a><sup>3</sup>,</span>
+                                  <span class="author-block">
+                                  <a href="https://sites.google.com/view/royafiroozi/home" target="https://sites.google.com/view/royafiroozi/home">Roya Firoozi</a><sup>3</sup>,</span>
+                                    <span class="author-block">
+                                      <a href="https://ece.snu.ac.kr/en/research-faculty/faculty/fulltime?md=view&profid=p022" target="https://ece.snu.ac.kr/en/research-faculty/faculty/fulltime?md=view&profid=p022">Seung-Woo Seo</a><sup>1</sup>,</span>
+                                      <span class="author-block">
+                                        <a href="https://web.stanford.edu/~schwager/" target="https://web.stanford.edu/~schwager/">Mac Shwager</a><sup>3</sup>,</span>
+                                          <span class="author-block">
+                                            <a href="https://arisnu.squarespace.com/director" target="https://arisnu.squarespace.com/director">Seong-Woo Kim</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+<!--                     <span class="author-block"><small><br><sup>1</sup>Seoul National University<small><br><sup>2</sup> Carnegie Mellon University<br>Conferance name and year</span> -->
+                    <span class="author-block"><small><br><sup>1</sup> Seoul National University <br><sup>2</sup> Carnegie Mellon University <br><sup>3</sup> Stanford University </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2409.10027" target="https://arxiv.org/pdf/2409.10027"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supp.pdf" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/knwoo/e2map" target="https://github.com/knwoo/e2map"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+<!--                 <span class="link-block"> -->
+<!--                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank" -->
+<!--                   class="external-link button is-normal is-rounded is-dark"> -->
+<!--                   <span class="icon"> -->
+<!--                     <i class="ai ai-arxiv"></i> -->
+<!--                   </span> -->
+<!--                   <span>arXiv</span> -->
+<!--                 </a> -->
+<!--               </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/e2map_final.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Large language models (LLMs) have shown significant potential in guiding embodied agents to execute language-based instructions across a range of tasks, including robotic manipulation and navigation. However, existing methods are primarily designed for static environments and do not leverage the agent's own experiences to refine its initial plans. Given that real-world environments are inherently stochastic, initial plans based solely on LLMs' general knowledge may fail to achieve their objectives, unlike in static scenarios. To address this limitation, this study introduces the Experience-and-Emotion Map (E2Map), which integrates not only LLM knowledge but also the agent's real-world experiences, drawing inspiration from human emotional responses. The proposed methodology enables one-shot behavior adjustments and immediate corrections by updating the E2Map based on the agent's experiences. Our evaluation in stochastic navigation environments, including both simulations and real-world scenarios, demonstrates that the proposed method significantly enhances performance compared to existing LLM-based approaches by adjusting the agent's behavior in a one-shot manner.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Concept of E2Map</h2>
+          <center>
+          <img src="static/images/concept.png" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+               E2Map is a spatial map that captures the agent's emotional responses to its experiences. Our method enables one-shot behavior adjustments in stochastic environments by updating the E2Map through the diverse capabilities of LLMs and LMM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">System Overview</h2>
+          <center>
+          <img src="static/images/e2map_arch.png" class="center-image blend-img-background"/>
+          </center>
+          <div class="level-set has-text-justified">
+            <p>
+               System Overview: (a) E2Map is created by embedding visual-language features and emotion parameters into corresponding grid cells. (b) When a user provides a language instruction, an LLM generates code through goal selection APIs to define goals to reach. (c) The planning algorithm then uses emotion as a cost function to determine the optimal path to the goal.  (d) If the agent encounters unexpected events during navigation, the E2Map is updated through the sequential operation of the event descriptor and emotion evaluator. Following the update, the planning algorithm replans the path to adjust the agent’s behavior in a one-shot manner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Experiments in Simulated Environments</h2>
+          <div class="content">
+            <h2 class="title is-4">Gazebo environment and Initial E2Map</h2>
+            <center>
+              <img src="static/images/gazebo_initial.png" class="center-image blend-img-background"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                We created a simulated environment that mirrored the real-world setting used for evaluation. We scanned the real-world setup using a 3D scanner and transferred the 3D model to the Gazebo simulator. The corresponding initial E2Map is displayed in the figure on the right.
+              </p>
+            </div>
+          </div>
+          
+          <div class="content">
+            <h2 class="title is-4">Experimental Scenarios</h2>
+            <center>
+              <img src="static/images/three_env.png" class="center-image blend-img-background"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                In the simulated environment, we designed three scenarios to assess our method. First, after building the initial E2Map, we introduced static obstacles, such as danger signs (danger sign), to evaluate the method's ability to adapt to environmental changes. Second, we positioned a human figure behind a wall and had them step out unexpectedly (human-wall). Third, we added a dynamic door that opened unexpectedly as the robot approached (dynamic door). The human-wall and dynamic door scenarios tested whether our method could adjust behavior based on experiences with dynamic events, improving navigation performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2 class="title is-4">Quantitative Result</h2>
+            <center>
+              <img src="static/images/simul_quan.png" class="center-image blend-img-background"/>
+            </center>
+          </div>
+
+          <div class="content">
+            <h2 class="title is-4">Qualitative Result</h2>
+            <div class="content">
+              <h2 class="title is-5">Danger Sign</h2>
+              <center>
+              <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <!-- Your video here -->
+                <source src="static/videos/e2map_danger_qual.mp4"
+                type="video/mp4">
+              </video>
+              </center>
+            </div>
+
+            <div class="content">
+              <h2 class="title is-5">Human-Wall</h2>
+              <center>
+              <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <!-- Your video here -->
+                <source src="static/videos/e2map_human_qual.mp4"
+                type="video/mp4">
+              </video>
+              </center>
+            </div>
+
+            <div class="content">
+              <h2 class="title is-5">Dynamic Door</h2>
+              <center>
+              <video poster="" id="tree" autoplay controls muted loop height="100%">
+                  <!-- Your video here -->
+                <source src="static/videos/e2map_door_qual.mp4"
+                type="video/mp4">
+              </video>
+              </center>
+            </div>            
+          </div>
+
+          <div class="content">
+          <h2 class="title is-4">Qualitative Results from the Event Descriptor and Emotion Evaluator</h2>
+            <div class="content">
+              <h2 class="title is-5">Danger Sign</h2>
+              <div class="content">
+                <h2 class="title is-6">Event Images</h2>
+                <center>
+                  <img src="static/images/ds_events.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+
+              <div class="content">
+                <h2 class="title is-6">Event Description</h2>
+                <center>
+                  <img src="static/images/ds_ed_result.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+
+              <div class="content">
+                <h2 class="title is-6">Emotion Evaluation</h2>
+                <center>
+                  <img src="static/images/ds_ee_result.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+            </div>
+
+            <div class="content">
+              <h2 class="title is-5">Human-Wall</h2>
+              <div class="content">
+                <h2 class="title is-6">Event Images</h2>
+                <center>
+                  <img src="static/images/hw_events.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+
+              <div class="content">
+                <h2 class="title is-6">Event Description</h2>
+                <center>
+                  <img src="static/images/hw_ed_result.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+
+              <div class="content">
+                <h2 class="title is-6">Emotion Evaluation</h2>
+                <center>
+                  <img src="static/images/hw_ee_result.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+            </div>
+
+            <div class="content">
+              <h2 class="title is-5">Dynamic Door</h2>
+              <div class="content">
+                <h2 class="title is-6">Event Images</h2>
+                <center>
+                  <img src="static/images/dd_events.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+
+              <div class="content">
+                <h2 class="title is-6">Event Description</h2>
+                <center>
+                  <img src="static/images/dd_ed_result.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+
+              <div class="content">
+                <h2 class="title is-6">Emotion Evaluation</h2>
+                <center>
+                  <img src="static/images/dd_ee_result.png" class="center-image blend-img-background"/>
+                </center>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Experiments in Real-World Environment</h2>
+
+          <div class="content">
+            <h2 class="title is-4">Real-World Setup</h2>
+            <center>
+              <img src="static/images/209_realworld.png" class="center-image blend-img-background"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                To evaluate the scalability and applicability of our method in real-world settings, we first set up a real-world environment by placing objects such as a sofa, table, refrigerator, and microwave in the conference room at Seoul National University. We used the same language instructions as in the simulation and incorporated real humans and danger signs to replicate the three scenarios from the simulation.
+              </p>
+            </div>
+          </div>
+          
+          <div class="content">
+            <h2 class="title is-4">Hardware Setup</h2>
+            <center>
+              <img src="static/images/limbo_spec.png" class="center-image blend-img-background"/>
+            </center>
+            <div class="level-set has-text-justified">
+              <p>
+                For real-world experiments, we used a Unitree Go1 quadruped robot. The real-world robot is equipped with an Intel RealSense L515 RGB-D camera, a Velodyne VLP-16 3D LiDAR, and an Intel NUC 13 with i7 CPU for computation. For real-world experiments, the navigation algorithm runs on the Intel NUC, while all other algorithms are executed on a server with four RTX-4090 GPUs. The Intel NUC and the server communicate remotely via Wi-Fi.
+              </p>
+            </div>
+          </div>
+
+          <div class="content">
+            <h2 class="title is-4">Quantitative Result</h2>
+            <center>
+              <img src="static/images/real_world_quan.png" class="center-image blend-img-background"/>
+            </center>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="section">
+  <div class="container is-max-desktop">
+  <div class="row">
+    <h2 class="title is-3">
+      Prompts
+    </h2>
+    <p class="content has-text-justified">
+        <a href="static/prompts/system_prompt.txt">System Prompt</a> |
+        <a href="static/prompts/gs_prompt.txt">Goal Selector Prompt</a> |
+        <a href="static/prompts/ed_prompt.txt">Event Descriptor Prompt</a> |
+        <a href="static/prompts/ee_prompt.txt">Emotion Evaluator Prompt</a>
+  </div>
+  </div>
+</section>
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@misc{kim2024e2mapexperienceandemotionmapselfreflective,
+      title={E2Map: Experience-and-Emotion Map for Self-Reflective Robot Navigation with Language Models}, 
+      author={Chan Kim and Keonwoo Kim and Mintaek Oh and Hanbi Baek and Jiyang Lee and Donghwi Jung and Soojin Woo and Younkyung Woo and John Tucker and Roya Firoozi and Seung-Woo Seo and Mac Schwager and Seong-Woo Kim},
+      year={2024},
+      eprint={2409.10027},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2409.10027}, 
+}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+  This research was funded by the Korean Ministry of Land, Infrastructure and Transport (MOLIT) through the Smart City Innovative Talent Education Program and by the Korea Institute for Advancement of Technology (KIAT) under a MOTIE grant (P0020536). Additional support came from the Ministry of Education (MOE) and the National Research Foundation of Korea (NRF). K. Kim, D. Jung, and the corresponding author are affiliated with the Smart City Global Convergence program. Research facilities were provided by the Institute of Engineering Research at Seoul National University.  </div>
+</section>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

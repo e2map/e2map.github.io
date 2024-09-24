@@ -1,0 +1,12 @@
+Below example is an answer format that you should follow.
+ 
+Answer: 
+These photos depict a sequence of events in an indoor office. Each photo sequentially illustrates the process of passing through a door. 
+ 
+In the first photo, I capture a scene just before someone opens a glass door. 
+ 
+In the second photo, the door is more open, and the person is stepping into the office. Then, I bumped into that person. 
+ 
+In the third photo, after colliding with the person, I cannot move further. 
+ 
+Overall Description: I collided with a person who was entering the room while opening the door.
